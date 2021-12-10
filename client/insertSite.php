@@ -31,7 +31,7 @@
         let name=document.getElementById("name").value
         let dev=document.getElementById("dev").value
         let rel=document.getElementById("rel").value
-        let gen=document.getElementById("gen").selectedIndex.id
+        let gen=document.getElementById("gen").selectedIndex+1
         fetch(`../server/insertGame.php?name=${name}&developer=${dev}&genre=${gen}&releaseDate=${rel}`)
         .then(response=>response.text())
         .then(data=>console.log(data? "sikeres":"hiba"))
