@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2021. Dec 09. 12:59
+-- Létrehozás ideje: 2021. Dec 10. 10:40
 -- Kiszolgáló verziója: 10.4.21-MariaDB
 -- PHP verzió: 8.0.10
 
@@ -44,7 +44,8 @@ INSERT INTO `games` (`id`, `name`, `developer`, `genre`, `releaseDate`) VALUES
 (2, 'Library of Ruina', 'Project Moon Games', 6, '2020-05-15'),
 (3, 'Guild Wars 2', 'Arenanet', 3, '2012-08-28'),
 (4, 'Arknights', 'Hypergryph', 7, '2019-05-01'),
-(5, 'Ruined King', 'Airship Syndicate + Riot Forge', 4, '2021-11-16');
+(5, 'Ruined King', 'Airship Syndicate + Riot Forge', 4, '2021-11-16'),
+(11, 'ffffff', 'ggggggg', 0, '2021-12-16');
 
 -- --------------------------------------------------------
 
@@ -80,8 +81,7 @@ INSERT INTO `genres` (`id`, `name`) VALUES
 -- A tábla indexei `games`
 --
 ALTER TABLE `games`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `genre` (`genre`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- A tábla indexei `genres`
@@ -97,7 +97,7 @@ ALTER TABLE `genres`
 -- AUTO_INCREMENT a táblához `games`
 --
 ALTER TABLE `games`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT a táblához `genres`
